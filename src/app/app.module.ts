@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PostsModule } from './posts/posts.module';
+import { FireStoreModule } from './firestore/firestore.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +12,9 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PostsModule,
+    FireStoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

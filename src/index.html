@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>Twitter3</title>
@@ -7,8 +8,35 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <link href=https://fonts.googleapis.com/icon?family=Material+Icons rel="stylesheet">
 </head>
+
 <body>
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.5.2/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCc16koFIg1aPFxQiyFpZt9ncK5WEGgvWw",
+      authDomain: "twitter-ifpb.firebaseapp.com",
+      databaseURL: "https://twitter-ifpb.firebaseio.com",
+      projectId: "twitter-ifpb",
+      storageBucket: "twitter-ifpb.appspot.com",
+      messagingSenderId: "213987237983",
+      appId: "1:213987237983:web:8c1c1852eafa4faa7ebbea",
+      measurementId: "G-M2P7Y3TXBG"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
 </body>
+
 </html>
